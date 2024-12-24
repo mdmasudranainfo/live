@@ -11,7 +11,9 @@ const LinksList = () => {
   useEffect(() => {
     const fetchLinks = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/link");
+        const response = await fetch(
+          "https://live-five-gamma.vercel.app/api/link"
+        );
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`);
         }
